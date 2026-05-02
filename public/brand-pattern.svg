@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtle repeating gymnast/palm pattern based on brand logomark -->
+  <g opacity="0.05">
+    <!-- Simplified gymnast shapes -->
+    <path d="M40 80 L50 60 L60 80 L50 100 Z" fill="currentColor"/>
+    <path d="M50 60 L55 50 L60 60 L55 70 Z" fill="currentColor"/>
+    <circle cx="55" cy="45" r="4" fill="currentColor"/>
+    
+    <!-- Palm frond accent -->
+    <path d="M70 90 L75 70 L80 90" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M75 70 L78 75 L75 80 L72 75 Z" fill="currentColor"/>
+  </g>
+  
+  <g opacity="0.05" transform="translate(100, 0)">
+    <path d="M40 80 L50 60 L60 80 L50 100 Z" fill="currentColor"/>
+    <path d="M50 60 L55 50 L60 60 L55 70 Z" fill="currentColor"/>
+    <circle cx="55" cy="45" r="4" fill="currentColor"/>
+    <path d="M70 90 L75 70 L80 90" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M75 70 L78 75 L75 80 L72 75 Z" fill="currentColor"/>
+  </g>
+  
+  <g opacity="0.05" transform="translate(0, 100)">
+    <path d="M40 80 L50 60 L60 80 L50 100 Z" fill="currentColor"/>
+    <path d="M50 60 L55 50 L60 60 L55 70 Z" fill="currentColor"/>
+    <circle cx="55" cy="45" r="4" fill="currentColor"/>
+    <path d="M70 90 L75 70 L80 90" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M75 70 L78 75 L75 80 L72 75 Z" fill="currentColor"/>
+  </g>
+  
+  <g opacity="0.05" transform="translate(100, 100)">
+    <path d="M40 80 L50 60 L60 80 L50 100 Z" fill="currentColor"/>
+    <path d="M50 60 L55 50 L60 60 L55 70 Z" fill="currentColor"/>
+    <circle cx="55" cy="45" r="4" fill="currentColor"/>
+    <path d="M70 90 L75 70 L80 90" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M75 70 L78 75 L75 80 L72 75 Z" fill="currentColor"/>
+  </g>
+</svg>
