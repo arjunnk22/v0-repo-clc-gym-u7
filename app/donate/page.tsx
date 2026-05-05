@@ -188,7 +188,7 @@ function DonationCategoryCard({
   category: (typeof donationCategories)[0]
   featured?: boolean
 }) {
-  const progress = category.goal ? Math.min((category.currentAmount! / category.goal) * 100, 100) : null
+
 
   return (
     <Card
@@ -219,24 +219,6 @@ function DonationCategoryCard({
               ))}
             </div>
 
-            {/* Progress Bar for Equipment Fund */}
-            {progress !== null && category.goal && (
-              <div className="mb-6">
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-semibold">Equipment Goal: ${category.goal.toLocaleString()}</span>
-                </div>
-                <div className="h-3 bg-muted rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-500"
-                    style={{ width: `${progress}%` }}
-                  />
-                </div>
-                <p className="text-xs text-muted-foreground mt-1">
-                  ${category.currentAmount?.toLocaleString()} raised of ${category.goal.toLocaleString()}
-                </p>
-              </div>
-            )}
-
             <div className="space-y-2 mb-6">
               {category.details.map((detail, idx) => (
                 <div key={idx} className="flex items-start gap-2">
@@ -266,26 +248,7 @@ function DonationCategoryCard({
               <p className="text-sm font-medium">{category.impact}</p>
             </div>
 
-            {category.preferDonate && (
-              <div className="pt-4 border-t">
-                <h3 className="font-semibold mb-3">{category.preferDonate.title}</h3>
-                <div className="space-y-3 mb-4">
-                  {category.preferDonate.text.split('\n\n').map((paragraph, idx) => (
-                    <p key={idx} className="text-sm text-muted-foreground">{renderTextWithBold(paragraph)}</p>
-                  ))}
-                </div>
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="/contact">Contact Us</a>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={category.preferDonate.productLink} target="_blank" rel="noopener noreferrer">
-                      View Product at Norbert's
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            )}
+
           </div>
 
           {/* Right Side - Donation Form */}
@@ -304,7 +267,7 @@ function DonationCategoryCard({
                 asChild
               >
                 <a href="https://buy.stripe.com/8x25kweV84ffgZs1r5gjC00" target="_blank" rel="noopener noreferrer">
-                  {category.id === "equipment_fund" ? "Donate to the Equipment Fund" : "Donate Now"}
+                  Donate Now
                 </a>
               </Button>
 
