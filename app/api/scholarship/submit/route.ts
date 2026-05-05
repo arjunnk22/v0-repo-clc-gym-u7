@@ -228,7 +228,6 @@ export async function POST(request: NextRequest) {
       await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL || 'contact@clcgymnastics.com',
         to: process.env.RESEND_TO_EMAIL || 'clcsboard@gmail.com',
-        cc: ['avatar0611@gmail.com'],
         subject: `New Scholarship Application: ${studentName}`,
         html: adminEmailHtml,
         ...(adminAttachments.length > 0 ? { attachments: adminAttachments } : {})
