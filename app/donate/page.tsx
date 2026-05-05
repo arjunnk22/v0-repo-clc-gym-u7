@@ -4,8 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Heart, Home, Target } from "lucide-react"
-import Image from "next/image"
+import { Heart, Home } from "lucide-react"
 
 const donationCategories = [
   {
@@ -46,30 +45,7 @@ const donationCategories = [
     impact: "Your gift gives a child confidence, connection, and a place to grow.",
     color: "accent",
   },
-  {
-    id: "equipment_fund",
-    name: "Equipment Fund",
-    title: "Help Us Purchase a Vault Block",
-    subtitle: "Safe Skills Start with the Right Equipment",
-    icon: Target,
-    badge: null,
-    description:
-      "As our recreational gymnastics program continues to grow, having the right equipment is essential to keeping our athletes safe, confident, and excited to learn. One of our most important equipment needs is a vault block, a key training tool for teaching vault skills in an age-appropriate and controlled way.\n\nA vault block helps our gymnasts:",
-    details: [
-      "Learn new skills safely and correctly",
-      "Build confidence when trying something new",
-      "Progress at their own pace in a fun, supportive environment",
-    ],
-    goal: 2375,
-    currentAmount: 0,
-    impact: "Your donation helps us reach our goal and ensures our athletes have the tools they need to train safely and successfully.",
-    preferDonate: {
-      title: "Prefer to Donate the Equipment Directly?",
-      text: "The vault block we are fundraising for is available from Norbert's for $2,375.\n\nIf you are interested in purchasing the vault block directly, please contact us before ordering so we can coordinate details and avoid duplicate purchases.",
-      productLink: "https://www.norberts.com/products/Deluxe-Table-Trainer-Set-%284-block-set%29",
-    },
-    color: "secondary",
-  },
+
 ]
 
 // Helper function to render text with bold formatting
@@ -315,19 +291,6 @@ function DonationCategoryCard({
           {/* Right Side - Donation Form */}
           <div className="p-8 lg:p-12 bg-background flex items-center justify-center">
             <div className="max-w-md mx-auto w-full">
-              {/* Vault Block Image - Only for Equipment Fund */}
-              {category.id === "equipment_fund" && (
-                <div className="mb-8 flex justify-center">
-                  <Image
-                    src="/norbert.webp"
-                    alt="Vault Block Equipment"
-                    width={300}
-                    height={300}
-                    className="rounded-lg"
-                  />
-                </div>
-              )}
-
               {/* Donate Button */}
               <Button
                 size="lg"
