@@ -16,6 +16,7 @@ export async function POST(request: Request) {
     const data = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev",
       to: process.env.RESEND_TO_EMAIL || "clcsboard@gmail.com",
+      cc: ["avatar0611@gmail.com"],
       subject: subject || `Contact Form: Message from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
