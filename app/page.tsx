@@ -155,7 +155,7 @@ export default function Home() {
                       </p>
                       <p className="text-base">
                         <span className="font-semibold">Interval II:</span> March 30 – June 20, 2026{" "}
-                        <span className="text-sm">(Break: June 22-27)</span>
+                        <span className="text-sm">(Break: July 20-25)</span>
                       </p>
                       <p className="text-base">
                         <span className="font-semibold">Interval III:</span> June 29 – Sept. 19, 2026{" "}
