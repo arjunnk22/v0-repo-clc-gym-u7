@@ -322,7 +322,7 @@ export default function ProgramsPage() {
                         </li>
                         <li>
                           <strong>Interval II:</strong> March 30 – June 20, 2026{" "}
-                          <span className="text-xs">(Break: June 22–27)</span>
+                          <span className="text-xs">(Break: July 20–25)</span>
                         </li>
                         <li>
                           <strong>Interval III:</strong> June 29 – Sept. 19, 2026{" "}
