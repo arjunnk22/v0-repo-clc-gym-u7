@@ -144,6 +144,17 @@ export function Footer() {
               Terms & Conditions
             </Link>
           </div>
+          <p className="mt-4 text-xs text-muted-foreground/60">
+            Website by{" "}
+            <a
+              href="https://varakit.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              varakit.com
+            </a>
+          </p>
         </div>
       </div>
     </footer>
