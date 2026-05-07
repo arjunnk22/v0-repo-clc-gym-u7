@@ -452,26 +452,26 @@ export function ScholarshipApplicationForm() {
                 <div className="flex items-center gap-2">
                   <Checkbox
                     id="program-saturday"
-                    checked={formData.programsAppliedFor.includes('Saturday Gymnastics Class')}
-                    onCheckedChange={(checked) => handleMultiCheckboxChange('programsAppliedFor', 'Saturday Gymnastics Class', checked as boolean)}
+                    checked={formData.programsAppliedFor.includes('Saturday Gymnastics Class (Kapaa)')}
+                    onCheckedChange={(checked) => handleMultiCheckboxChange('programsAppliedFor', 'Saturday Gymnastics Class (Kapaa)', checked as boolean)}
                   />
-                  <Label htmlFor="program-saturday" className="font-normal cursor-pointer">Saturday Gymnastics Class</Label>
+                  <Label htmlFor="program-saturday" className="font-normal cursor-pointer">Saturday Gymnastics Class (Kapaa)</Label>
                 </div>
                 <div className="flex items-center gap-2">
                   <Checkbox
                     id="program-tuesday"
-                    checked={formData.programsAppliedFor.includes('Tuesday Gymnastics Class')}
-                    onCheckedChange={(checked) => handleMultiCheckboxChange('programsAppliedFor', 'Tuesday Gymnastics Class', checked as boolean)}
+                    checked={formData.programsAppliedFor.includes('Tuesday Gymnastics Class (Lihue)')}
+                    onCheckedChange={(checked) => handleMultiCheckboxChange('programsAppliedFor', 'Tuesday Gymnastics Class (Lihue)', checked as boolean)}
                   />
-                  <Label htmlFor="program-tuesday" className="font-normal cursor-pointer">Tuesday Gymnastics Class</Label>
+                  <Label htmlFor="program-tuesday" className="font-normal cursor-pointer">Tuesday Gymnastics Class (Lihue)</Label>
                 </div>
                 <div className="flex items-center gap-2">
                   <Checkbox
-                    id="program-future"
-                    checked={formData.programsAppliedFor.includes('Other / Future Program')}
-                    onCheckedChange={(checked) => handleMultiCheckboxChange('programsAppliedFor', 'Other / Future Program', checked as boolean)}
+                    id="program-monday"
+                    checked={formData.programsAppliedFor.includes('Monday Gymnastics Class (Poipu)')}
+                    onCheckedChange={(checked) => handleMultiCheckboxChange('programsAppliedFor', 'Monday Gymnastics Class (Poipu)', checked as boolean)}
                   />
-                  <Label htmlFor="program-future" className="font-normal cursor-pointer">Other / Future Program</Label>
+                  <Label htmlFor="program-monday" className="font-normal cursor-pointer">Monday Gymnastics Class (Poipu)</Label>
                 </div>
               </div>
             </div>
