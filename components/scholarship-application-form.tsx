@@ -24,6 +24,7 @@ interface FormData {
   phone: string
   
   // Program Interest
+  preferredLocation: string
   programsAppliedFor: string[]
   currentlyEnrolled: string
   
@@ -86,6 +87,7 @@ export function ScholarshipApplicationForm() {
     parentGuardianName: "",
     email: "",
     phone: "",
+    preferredLocation: "",
     programsAppliedFor: [],
     currentlyEnrolled: "",
     householdSize: "",
@@ -428,6 +430,22 @@ export function ScholarshipApplicationForm() {
       case 1: // Program Interest
         return (
           <div className="space-y-6">
+            <div>
+              <Label htmlFor="preferredLocation" className="mb-2 block">Preferred Class Location *</Label>
+              <select
+                id="preferredLocation"
+                value={formData.preferredLocation}
+                onChange={(e) => handleInputChange('preferredLocation', e.target.value)}
+                required
+                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              >
+                <option value="">Select a location</option>
+                <option value="Lihue">Līhu&apos;e — United Church Parish Hall</option>
+                <option value="Kapaa">Kapa&apos;a — All Saints Gym</option>
+                <option value="Poipu">Po&apos;ipu — Kaua&apos;i Christian Fellowship</option>
+              </select>
+            </div>
+
             <div>
               <Label className="mb-3 block">Which class/program are you applying for? *</Label>
               <div className="space-y-2">

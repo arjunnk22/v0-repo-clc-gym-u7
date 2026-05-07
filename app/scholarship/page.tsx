@@ -28,6 +28,10 @@ export default function ScholarshipPage() {
               Please complete the form below. Applications are reviewed based on financial need, program capacity, 
               and available funding.
             </p>
+            <p className="mt-3 font-medium text-foreground">
+              We are currently accepting scholarship applications for the following locations:{" "}
+              <span className="text-primary">Līhu&apos;e, Kapa&apos;a, and Po&apos;ipu</span>.
+            </p>
           </div>
 
           <div className="mb-8 reveal reveal-delay-1">
