@@ -135,8 +135,14 @@ export async function POST(request: NextRequest) {
       
       <p>Thank you for submitting a scholarship application for <strong>${studentName}</strong> to CLC's Gymnastics Academy.</p>
       
-      <p>We have received your application and will review it carefully. Our scholarship committee will contact you 
-      once decisions have been made.</p>
+      <p>We have received your application and will review it carefully.</p>
+      
+      <div style="background: #fef9c3; border-left: 4px solid #ca8a04; padding: 15px; margin: 20px 0;">
+        <p style="margin: 0; font-weight: bold; color: #854d0e;">⏳ Processing Time</p>
+        <p style="margin: 5px 0 0 0; font-size: 14px;">
+          Please allow <strong>1-2 weeks</strong> for your application to be reviewed. We will notify you of the decision via email.
+        </p>
+      </div>
       
       <div style="background: #eff6ff; border-left: 4px solid #2563eb; padding: 15px; margin: 20px 0;">
         <p style="margin: 0; font-weight: bold; color: #1e40af;">📄 Your Signed Application</p>
@@ -148,7 +154,7 @@ export async function POST(request: NextRequest) {
       
       <h3>What happens next:</h3>
       <ul>
-        <li>Your application will be reviewed by our scholarship committee</li>
+        <li>Your application will be reviewed by our scholarship committee (1-2 weeks)</li>
         <li>You will be notified of the decision via email</li>
         <li>If awarded, we will provide details about next steps</li>
       </ul>
